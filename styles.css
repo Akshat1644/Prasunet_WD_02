@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.header{
+    color: red;
+}
+
+.stopwatch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.stopwatch {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.time-display {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+
+#start-pause{
+    background-color: orange;
+}
+
+#reset{
+    background-color: red;
+}
+
+#lap{
+    background-color: green;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.controls button, .controls input {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    max-width: 120px;
+}
+
+.controls input {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    max-width: 150px;
+}
+
+.laps {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.laps div {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .time-display {
+        font-size: 2.5em;
+    }
+
+    .controls button, .controls input {
+        padding: 8px 16px;
+        font-size: 0.9em;
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    .stopwatch {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .time-display {
+        font-size: 2em;
+    }
+
+    .controls button, .controls input {
+        padding: 6px 12px;
+        font-size: 0.8em;
+        margin: 4px 0;
+    }
+
+    .stopwatch {
+        padding: 15px;
+    }
+}
